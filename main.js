@@ -2,7 +2,7 @@ import { showModal, hideModal } from './modal.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('survey-form');
-  const closeBtn = document.getElementById('close-modal');
+  const closeButton = document.getElementById('close-modal');
 
   form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     form.reset();
   });
 
-  closeBtn.addEventListener('click', () => {
+  closeButton.addEventListener('click', () => {
     hideModal();
   });
 });
