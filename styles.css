@@ -73,7 +73,7 @@ textarea {
   margin-right: 8px;
 }
 
-.boton {
+#submit {
   background-color: #eaeaea;
   color: #003366;
   font-size: 18px;
@@ -88,4 +88,29 @@ textarea {
 
 .boton:hover {
   background-color: #d5d5d5;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(29, 92, 200);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.hidden {
+    display: none;
 }

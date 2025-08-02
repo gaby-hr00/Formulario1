@@ -12,19 +12,19 @@
   <h4 class="titulo2">GRACIAS POR DEJAR SUS DATOS</h4>
 
   <div class="contenedor-formulario">
-    <form class="formulario" id="formulario_registro">
+    <form class="formulario" id="survey-form">
 
       <label>Name:</label>
-      <input type="text" name="Nombre" required>
+      <input type="text" name="Nombre" >
 
       <label>Email:</label>
-      <input type="email" name="correo" required>
+      <input type="email" name="correo">
 
       <label>Age:</label>
-      <input type="number" name="Edad" required>
+      <input type="number" name="Edad">
 
       <label>Choose on option:</label>
-      <select name="ubicacion" required>
+      <select name="ubicacion" >
       <option value="" disabled selected>Selecciona una opción</option>
       <option value="bogota">Bogotá</option>
       <option value="medellin">Medellín</option>
@@ -41,7 +41,7 @@
       </div>
 
       <label for="marca-carro">What is your favorite car brand?</label>
-      <select id="marca-carro" name="marca-carro" required>
+      <select id="marca-carro" name="marca-carro" >
         <option value="" disabled selected>Select One Option</option>
         <option value="toyota">Toyota</option>
         <option value="chevrolet">Chevrolet</option>
@@ -63,10 +63,17 @@
       <label for="comentarios">Any comments suggestions?</label>
       <textarea id="comentarios" name="comentarios" placeholder="Please enter your comments"></textarea>
 
-      <button type="submit" class="boton">Submit</button>
+      <button type="submit" class="submit" id="submit">Submit</button>
 
-    </form>
+    </form >
+    <div id="modal-success" class="modal hidden">
+        <div class="modal-content">
+            <h2>Datos enviados con exito</h2>
+            <button id="close-modal">CERRAR</button>
+        </div>
+    </div>
   </div>
   
+    <script type="module" src="main.js"></script>
 </body>
 </html>
