@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(124, 185, 243);
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  margin-top: 60px;
+}
+
+.titulo2 {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  margin-top: 40px;
+}
+
+.contenedor-formulario {
+  width: 950px;
+  margin: 20px auto;
+  background-color: #003366;
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+}
+
+.formulario label {
+  margin-top: 15px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  background-color: #eaeaea;
+  border: none;
+  border-radius: 2px;
+  font-family: Arial, sans-serif;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.grupo-opciones {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  gap: 5px;
+}
+
+.grupo-opciones input[type="radio"],
+.grupo-opciones input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.boton {
+  background-color: #eaeaea;
+  color: #003366;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  margin: 25px auto 0 auto;
+  cursor: pointer;
+  display: block;
+  font-family: 'Playfair Display', serif;
+}
+
+.boton:hover {
+  background-color: #d5d5d5;
+}
